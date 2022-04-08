@@ -14,7 +14,7 @@ class Solution{
     bool isPowerofTwo(long long n){
         
         // Your code here    
-        
+       // time complexity for this solution is log(n)...        
         long long int  x  = n;
         int count  = 0;
         while(x != 0) {
