@@ -28,6 +28,45 @@ class Solution{
            arr[i] = v[i];
         } 
     }
+	
+	
+	// my linear space approach ......
+	
+	
+	
+       // i had used space here so the space complexity for this program is O(N)....
+       // time complexity is O(N)...
+       // but we get segmentation fault in this...    :(   optamize space more; 
+       long long int temp[n];
+       long long int indx = 0;
+       
+       long int l = 0; 
+       long int hi = n-1;
+       
+       while(l <= hi) {
+           
+           temp[indx] = arr[hi];
+           indx++;
+           hi--;
+           
+           temp[indx] = arr[l];
+           indx++;
+           l++;
+           
+       }
+       
+       
+       
+       for(int i=0; i<n; i++) {
+           arr[i] = temp[i];
+       }
+	
+	
+	
+	
+	
+	
+	
 };
 
 // { Driver Code Starts.
