@@ -11,6 +11,8 @@ public:
 	// The main function that returns the arrangement with the largest value as
 	// string.
 	// The function accepts a vector of strings
+	// time complexity is O(N log N)...
+	// space is O(1)
 	static bool comp(string a,string b)
 	{
 	    string s1 = a+b;
